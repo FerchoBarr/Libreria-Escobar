@@ -1,0 +1,388 @@
+/* Reset */
+
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1em;
+    background-color: rgb(210, 237, 248);
+
+    background-repeat: no-repeat;
+    background-size: 500px;
+
+    margin: 0%;
+    
+}
+
+/*==============================*/
+/*=============================*/
+/*Este es el ejemplo de cómo utilizaré las transformaciones a la hora de poner fotos de libros destacados, pero estoy esperandoa ver boostrap para cambiar el diseño del home*/
+
+#libro-muestra{
+}
+
+#libro-muestra:hover{
+    border-radius: 10px;
+    transform: scale(1.15);
+
+}
+
+/*==========================*/
+/*=========================*/
+
+
+
+
+
+/* Estos son los estilos de css destinados a cambiar el formato de los h1, h2, listas, div, ect. */
+
+
+    /*Y también aca probe jugar un poco con los h1 usando transformaciones*/
+
+    h1{
+        font-family: 'Katibeh', cursive;
+        color: rgb(31, 160, 121);
+
+
+
+
+        animation-duration: 3s;
+        animation-name: titulo;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes titulo{
+
+        0%{
+            opacity: 0;
+        } 
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    /*==================*/
+    /*==================*/
+
+
+
+h2{
+    font-family: 'Katibeh', cursive;
+}
+
+
+.icono-diferente{
+    list-style-image: url(/imagenes/imagenes-iconos/baseline_menu_book_black_24dp.png);
+}
+
+
+
+/*=================================*/
+/*=================================*/
+/*Esto es para la parte de ul-ol-li*/
+/*=================================*/
+/*=================================*/
+
+.letra-grande{
+    font-size: 0.3in;
+}
+
+
+/*==============*/
+
+div ul li{
+    display: inline-block;
+    text-align: left;
+    margin-left: 0%;
+    padding-right: 100px;
+
+}
+
+
+
+#tituloSecundario {
+    color: rgb(21, 114, 114);
+}
+
+.azulclaro{
+    color: rgb(19, 117, 141);
+}
+
+.links {
+    text-decoration: none;
+}
+
+/*=======================*/
+/*Acá practiqué lo de las transformaciones para los links de navegación*/
+/*======================*/
+
+    .el-desubicado{
+        border: solid 2px rgb(178, 214, 214);
+    
+    
+        transition: all 2.5s ease-in-out;
+    }
+
+    .el-desubicado:hover{
+        background-color: rgb(157, 157, 158);
+    
+        transition: 0.5s;
+    
+    }
+
+
+    .links-primary{
+        color: rgb(9, 12, 17);
+        font-weight: 900;
+        text-align: right;
+
+        background-color:rgb(72, 139, 170);
+        border: solid 2px rgb(178, 214, 214);
+    
+    
+        transition: all 2.5s ease-in-out;
+    }
+
+    .links-primary:hover{
+        background-color: rgb(199, 231, 210);
+    
+        transition: 0.5s;
+    
+    }
+
+/*==================*/
+/*==================*/
+
+
+
+
+/*Acá intenté hacer un efecto de sombra en el suelo de los logos usando animaciones cuando se le pasa el mouse, no se que me salió pero algo salió...*/
+
+
+    .links-secondary{
+     display: inline;
+    }
+
+    .links-secondary:hover{ 
+
+        animation-name: red-social;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 0.8s;
+    }
+
+
+    @keyframes red-social {
+
+        0%{
+            background-color: rgb(222, 243, 243);
+        }
+
+    50%{
+        background-color: rgb(120, 141, 163);
+        border-radius: 100px;
+    }
+
+    100%{
+        background-color: gray;
+        border-radius: 60px;
+    }
+
+    }
+
+/*=================*/
+/*=================*/
+
+
+
+
+/*==================*/
+/*A partir de aca empieza lo que ya me habías corregido Daniel*/
+/*==================*/
+
+.links-redes-sociales{
+    height: 70px;
+    width: 90%;
+    border-style: dashed;
+    border-width: 4; 
+    border-color: rgb(102, 185, 185);
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(199,199,199);
+    background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
+    
+}
+
+    /* Estos son los estilos de css para trabajar lo de las posiciones y el concepto de padres e hijos*/
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en flex*/
+    /* == */
+    /* == */
+    .flex-container{
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+    }    
+
+    /*Es lo que le da color a los navegadores*/
+
+    .flex-container div{
+        background: rgb(199,199,199);
+        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en grid para la parte de redes sociales*/
+    /* == */
+    /* == */
+
+
+    /*Es lo que le da color a los navegadores de redes sociales*/
+
+    .grid-container-sociales{
+   
+        background: rgb(199,199,199);
+        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
+
+
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+
+        height: 75px;
+    }
+
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en grid, pero no fui capaz de aplicar el grid temple areas porque no encontré el error*/
+    /* == */
+    /* == */
+
+    #grid-container{
+
+        padding: 10px;
+
+        display: grid;
+        /*grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;*/
+        grid-template-areas: 
+        'lista-grid-1 lista-grid-2'
+        'lista-grid-3'
+        ;
+
+        align-items: center;
+        grid-column-gap: 10px;
+
+    }
+
+    #lista-grid-1{
+
+    
+    text-align: left;
+    height: 300px;
+    width: 40%;
+
+    grid-area: lista-grid-1;
+
+    }
+
+
+    #lista-grid-2{
+
+        text-align: left;
+        height: 300px;
+        width: 58%;
+
+        grid-area: lista-grid-2;
+    }
+
+
+    #lista-grid-3{
+
+        text-align: left;
+        width: 50%;
+        height: 410px;
+
+        grid-area: lista-grid-3;
+    }
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en grid para la parte de index (la imagen y el texto)*/
+    /* == */
+    /* == */
+
+
+    .padre{
+        padding: 10px;
+        height: 60vh;
+
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hijo-1{
+        align-items: right;
+    
+    }
+
+    .hijo-2{
+        width: 80%;
+        text-align: left;
+
+    }
+
+/* Estos son los estilos de css para el link que se supone tiene la propiedad sticky*/
+
+.el-desubicado{
+    text-align: right;
+    font-weight: 900;
+    text-decoration: none;
+    text-decoration: underline none;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+    
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en flex (saqué lo de align-text)*/
+    /* == */
+    /* == */
+
+    #contenedor-formulario{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        }
+    
+
+    #formulario{
+        width: 100px;
+
+    }
+   
+
+    /*=======================*/
+    /*Este es el último logo que cree para agregar de fondo a la página*/
+    /*======================*/
+
+    .logo{
+        height: 80px;
+        width: 150px;
+    }
