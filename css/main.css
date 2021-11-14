@@ -9,7 +9,7 @@ body{
     background-size: 500px;
 
     margin: 0%;
-    
+ 
 }
 
 /*==============================*/
@@ -64,8 +64,6 @@ body{
     /*==================*/
     /*==================*/
 
-
-
 h2{
     font-family: 'Katibeh', cursive;
 }
@@ -75,8 +73,6 @@ h2{
     list-style-image: url(/imagenes/imagenes-iconos/baseline_menu_book_black_24dp.png);
 }
 
-
-
 /*=================================*/
 /*=================================*/
 /*Esto es para la parte de ul-ol-li*/
@@ -84,7 +80,7 @@ h2{
 /*=================================*/
 
 .letra-grande{
-    font-size: 0.3in;
+    font-size: 3 rem;
 }
 
 
@@ -93,7 +89,7 @@ h2{
 div ul li{
     display: inline-block;
     text-align: left;
-    margin-left: 0%;
+    margin-left: 0;
     padding-right: 100px;
 
 }
@@ -227,7 +223,7 @@ div ul li{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-
+        background-color: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
     }    
 
     /*Es lo que le da color a los navegadores*/
@@ -235,8 +231,8 @@ div ul li{
     .flex-container div{
         background: rgb(199,199,199);
         background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
-        padding: 0%;
-        margin: 0%;
+        padding: 0;
+        margin: 0;
 
     }
 
