@@ -12,73 +12,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-
     <!-- Main css-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!-- == -->
-    <!-- Esto es sólo una prueba visual para la tabla -->
-    <!-- == -->
-
-    <style>
-        caption{
-            background-color: cornflowerblue;
-        }
-        tr{
-            background-color: cadetblue;
-        }
-        td{
-            background-color: rgb(126, 195, 197);
-        }
-    </style>
 </head>
 
 <body>
 
+    <header class="flex-container">
 
-    <header>
+        <div>
 
-        <div class="flex-container">
-            
-            <div>
-
-                <img class="logo" src="../imagenes/nueva-marca-prueba-2.jpg" alt="" >
+             <img class="logo" src="../imagenes/nueva-marca-prueba-2.jpg" alt="" >
                 
-            </div>
-            
-            <div class="home.about">
-
-                
-                <!-- == -->
-                <!-- Acá puse los navegadores con sus respectivos nombres -->
-                <!-- == -->
-                <nav>
-                    
-                    <ul class="lista-navegador">
-                        <li>
-                            <a class="links links-primary" href="../index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="links links-primary" href="sobrenosotros.html">Sobre Nosotros</a>
-                        </li>
-                        <li>
-                            <a class="links links-primary" href="novedades.html">Novedades</a>
-                        </li>
-                        <li>
-                            <a class="links links-primary" href="clientes.html">Clientes</a>
-                        </li>
-                    </ul>
-                    
-                </nav>
-
-            </div>
-
-
         </div>
+            
+        <!-- == -->
+        <!-- Acá puse los navegadores con sus respectivos nombres -->
+        <!-- == -->
+        <nav class="home-about">
 
+            <div>
+                    
+            <ul class="lista-navegador">
+                <li>
+                    <a class="links links-primary" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="links links-primary" href="sobrenosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a class="links links-primary" href="novedades.html">Novedades</a>
+                </li>
+                 <li>
+                    <a class="links links-primary" href="clientes.html">Clientes</a>
+                 </li>
+                 <li>
+                    <a class="links links-primary" href="gift-cards.html">Gift Cards</a>
+                </li>
+            </ul>
+                    
+        </nav>
+    </div>
     </header>
 
-    
     <main>
 
         <h1>Sobre Nosotros</h1>
@@ -86,6 +63,8 @@
         <p>
             Librería Escobar nació en Buenos Aires, Argentina, en el año 2016. Somos un estableciemiento comercial especializados en la compra, venta, distribución y reparación de libros usados que busca ofrecer tanto a lectores y autores la mejor experiencia en el ámbito de la literatura.
         </p>
+
+        <img id="ubicacion-mapa" src="../imagenes/ubicación-Librería.jpg" alt="">
         
         <!-- == -->
         <!-- Acá empiezan los h2 con su atributo class del CSS -->
@@ -128,7 +107,7 @@
                 </tr>
                 
                 <tr>
-                    <td>13:30-14:00</td>
+                    <td>13:30-14:30</td>
                     <td>Horario de descanso</td>
                     <td>Horario de descanso</td>
                     <td>Horario de descanso</td>
@@ -138,7 +117,7 @@
                 </tr>
                 
                 <tr>
-                    <td>14:00-19:30</td>
+                    <td>14:00-20:00</td>
                     <td>Abierto</td>
                     <td>Abierto</td>
                     <td>Abierto</td>
@@ -149,7 +128,7 @@
             </tbody>
 
             <!-- ============== -->
-            <!-- Aquí profesor tuve un problema, porque pese a que use un tfoot para hacer una aclaración debajo de la tabla, éste me aparece arriba de todo -->
+            <!-- Aquí profesor tuve un problema, porque pese a que use un tfoot para hacer una aclaración debajo de la tabla, éste me aparece arriba de todo y sin cambios del css -->
             <!-- ============== -->
             
             <tfoot>
@@ -181,12 +160,11 @@
         </section>
     </main>
         
-
      <!-- En esta parte se encuentran los links a las redes sociales ya utilizando la semantica correcta de footer-->
 
     <footer class="grid-container-sociales">
     
-            <h4>Si quieres concoer más sobre Librería Escobar visita nuestras redes sociales</h4>
+            <h4>Si quieres conocer más sobre Librería Escobar visita nuestras redes sociales</h4>
 
         <div class="links-redes-sociales">
             <ul class="redes-sociales">

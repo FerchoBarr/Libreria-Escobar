@@ -3,18 +3,45 @@
 body{
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-size: 1em;
-    background-color: rgb(210, 237, 248);
+    background-color: rgb(222, 235, 236);
 
     background-repeat: no-repeat;
     background-size: 500px;
 
     margin: 0%;
- 
 }
 
-/*==============================*/
+    /* ==== */
+    /* Css del contenedor de bienvenida del index (Esta al inicio por ser de las primeras cosas que se deberían ver) */
+    /* ==== */
+
+    .contenedor-bienvenida{
+        background-image: url(../imagenes/gift-cards/banner-navidad-bienvenida.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 500px;
+        width: 80%;
+        margin-left: 10%;
+
+        border-radius: 40px;
+    }
+
+    .contenedor-bienvenida h3{
+        font-size: 2rem;
+        color: blanchedalmond;
+        text-align: center center;
+        width: 70%;
+        margin-left: 0;
+        text-align-last: center;
+        padding: 200px;
+    }
+
+
 /*=============================*/
 /*Este es el ejemplo de cómo utilizaré las transformaciones a la hora de poner fotos de libros destacados, pero estoy esperandoa ver boostrap para cambiar el diseño del home*/
+/*==============================*/
 
 #libro-muestra{
 }
@@ -22,36 +49,26 @@ body{
 #libro-muestra:hover{
     border-radius: 10px;
     transform: scale(1.15);
-
 }
 
 /*==========================*/
 /*=========================*/
 
-
-
-
-
 /* Estos son los estilos de css destinados a cambiar el formato de los h1, h2, listas, div, ect. */
-
 
     /*Y también aca probe jugar un poco con los h1 usando transformaciones*/
 
     h1{
         font-family: 'Katibeh', cursive;
         color: rgb(31, 160, 121);
-
-
-
+        font-size: 3rem;
 
         animation-duration: 3s;
         animation-name: titulo;
         animation-iteration-count: infinite;
-
     }
 
     @keyframes titulo{
-
         0%{
             opacity: 0;
         } 
@@ -66,8 +83,8 @@ body{
 
 h2{
     font-family: 'Katibeh', cursive;
+    font-size: 2rem;
 }
-
 
 .icono-diferente{
     list-style-image: url(/imagenes/imagenes-iconos/baseline_menu_book_black_24dp.png);
@@ -83,7 +100,6 @@ h2{
     font-size: 3 rem;
 }
 
-
 /*==============*/
 
 div ul li{
@@ -91,10 +107,7 @@ div ul li{
     text-align: left;
     margin-left: 0;
     padding-right: 100px;
-
 }
-
-
 
 #tituloSecundario {
     color: rgb(21, 114, 114);
@@ -115,7 +128,6 @@ div ul li{
     .el-desubicado{
         border: solid 2px rgb(178, 214, 214);
     
-    
         transition: all 2.5s ease-in-out;
     }
 
@@ -123,9 +135,7 @@ div ul li{
         background-color: rgb(157, 157, 158);
     
         transition: 0.5s;
-    
     }
-
 
     .links-primary{
         color: rgb(9, 12, 17);
@@ -135,7 +145,6 @@ div ul li{
         background-color:rgb(72, 139, 170);
         border: solid 2px rgb(178, 214, 214);
     
-    
         transition: all 2.5s ease-in-out;
     }
 
@@ -143,24 +152,18 @@ div ul li{
         background-color: rgb(199, 231, 210);
     
         transition: 0.5s;
-    
     }
 
 /*==================*/
 /*==================*/
 
-
-
-
 /*Acá intenté hacer un efecto de sombra en el suelo de los logos usando animaciones cuando se le pasa el mouse, no se que me salió pero algo salió...*/
-
 
     .links-secondary{
      display: inline;
     }
 
     .links-secondary:hover{ 
-
         animation-name: red-social;
         animation-iteration-count: infinite;
         animation-timing-function: ease;
@@ -168,30 +171,25 @@ div ul li{
         animation-delay: 0.8s;
     }
 
-
     @keyframes red-social {
 
         0%{
             background-color: rgb(222, 243, 243);
         }
 
-    50%{
-        background-color: rgb(120, 141, 163);
-        border-radius: 100px;
-    }
+        50%{
+            background-color: rgb(120, 141, 163);
+            border-radius: 100px;
+        }
 
-    100%{
-        background-color: gray;
-        border-radius: 60px;
-    }
+        100%{
+         background-color: gray;
+         border-radius: 60px;
+        }
 
     }
-
 /*=================*/
 /*=================*/
-
-
-
 
 /*==================*/
 /*A partir de aca empieza lo que ya me habías corregido Daniel*/
@@ -200,15 +198,9 @@ div ul li{
 .links-redes-sociales{
     height: 70px;
     width: 90%;
-    border-style: dashed;
-    border-width: 4; 
-    border-color: rgb(102, 185, 185);
     text-align: right;
     bottom: 10px;
     right: 10px;
-    background: rgb(199,199,199);
-    background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
-    
 }
 
     /* Estos son los estilos de css para trabajar lo de las posiciones y el concepto de padres e hijos*/
@@ -218,25 +210,20 @@ div ul li{
     /* Estos son los estilos de css para trabajar lo aprendido en flex*/
     /* == */
     /* == */
-    .flex-container{
 
+    .flex-container{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        background-color: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
+        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
     }    
 
     /*Es lo que le da color a los navegadores*/
 
     .flex-container div{
-        background: rgb(199,199,199);
-        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
         padding: 0;
         margin: 0;
-
     }
-
-
 
     /* == */
     /* == */
@@ -244,21 +231,21 @@ div ul li{
     /* == */
     /* == */
 
-
     /*Es lo que le da color a los navegadores de redes sociales*/
 
     .grid-container-sociales{
-   
         background: rgb(199,199,199);
         background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
-
 
         display: grid;
         grid-template-columns: 5fr 7fr;
 
         height: 75px;
-    }
 
+        border-style: dashed;
+        border-width: 4; 
+        border-color: rgb(102, 185, 185);
+    }
 
     /* == */
     /* == */
@@ -267,7 +254,6 @@ div ul li{
     /* == */
 
     #grid-container{
-
         padding: 10px;
 
         display: grid;
@@ -280,23 +266,18 @@ div ul li{
 
         align-items: center;
         grid-column-gap: 10px;
-
     }
 
     #lista-grid-1{
-
-    
     text-align: left;
     height: 300px;
     width: 40%;
 
     grid-area: lista-grid-1;
-
     }
 
 
     #lista-grid-2{
-
         text-align: left;
         height: 300px;
         width: 58%;
@@ -306,7 +287,6 @@ div ul li{
 
 
     #lista-grid-3{
-
         text-align: left;
         width: 50%;
         height: 410px;
@@ -323,8 +303,7 @@ div ul li{
 
     .padre{
         padding: 10px;
-        height: 60vh;
-
+        height: 72vh;
 
         display: flex;
         flex-direction: row-reverse;
@@ -333,13 +312,11 @@ div ul li{
 
     .hijo-1{
         align-items: right;
-    
     }
 
     .hijo-2{
         width: 80%;
         text-align: left;
-
     }
 
 /* Estos son los estilos de css para el link que se supone tiene la propiedad sticky*/
@@ -367,13 +344,10 @@ div ul li{
         align-items: baseline;
         }
     
-
     #formulario{
         width: 100px;
-
     }
    
-
     /*=======================*/
     /*Este es el último logo que cree para agregar de fondo a la página*/
     /*======================*/
@@ -381,4 +355,146 @@ div ul li{
     .logo{
         height: 80px;
         width: 150px;
+    }
+
+        /* ==== */
+    /* Css de la ubicación de la librería en "Sobre Nosotros" */
+    /* ==== */
+
+    #ubicacion-mapa{
+        border-radius: 30px;
+        margin-left: 15%;
+        border: solid 3px rgb(116, 106, 106);
+        width: 70%;
+    }
+
+    /* ==== */
+    /* Este es el css de la Tabla de "Sobre Nosotros" */
+    /* ==== */
+
+    table{
+        margin-left: 150px;
+        background-color: rgb(147, 157, 172);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+
+        font-size: 1.15rem;
+    }
+    caption{
+        font-size: 1.5rem;
+
+        background-color: rgb(198, 198, 218);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    thead{
+        background-color: rgb(173, 173, 224);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    th{
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    tbody{
+        background-color: rgb(177, 177, 177);
+        border-radius: 20px;
+    }
+    tr:hover td{
+        background-color: rgb(72, 133, 133);
+    }
+
+    /* ==== */
+    /* Css de las Gift Cards */
+    /* ==== */
+
+    main .gift-cards{
+        display: grid;
+    }
+
+    .contenedor-gift-cards-banner{
+        background-image: url(../imagenes/gift-cards/gift-card-banner.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+
+        height: 500px;
+    }
+
+    .contenedor-gift-cards-banner-hijo-1{
+        float: left;
+    }
+
+    .contenedor-gift-cards-banner-hijo-2{
+        color: rgb(245, 245, 231);
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .contenedor-separador-gift-card{
+        margin: 50px;
+    }
+
+    .contenedor-gift-cards-banner h2{
+        font-size: 3rem;
+        color: whitesmoke;
+        margin: 50px;
+    }
+
+    .contenedor-gift-cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: minmax(50px, auto);
+        gap: 20px;
+        padding-left: 100px;
+        padding-right: 0;
+    }
+
+    .footer-gift-card{
+        text-align: center;
+    }
+    
+    .contenedor-gift-cards img{
+        width: 85%;
+        border: 3px solid rgb(95, 163, 172);
+        border-radius: 20px;
+    
+        align-items: center;
+        
+        margin: auto;
+    }
+
+    /* ==== */
+    /* Css del banner de "ahora 12" */
+    /* ==== */
+
+    .contenedor-formas-pago{
+        background-image: url(../imagenes/gift-cards/banner-formas-pago.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 600px;
+        width: 100%;
+
+        border-radius: 40px;
+    }
+
+    .contenedor-formas-pago h3{
+        padding: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        color: blanchedalmond;
+    }
+    .contenedor-formas-pago h3 a{
+        text-decoration: none;
+        color:rgb(172, 127, 14);
+        width: 60%;
     }
